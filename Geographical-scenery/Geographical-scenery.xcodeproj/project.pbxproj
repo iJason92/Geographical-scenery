@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		965841A41B1A048900EC226E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965841A31B1A048900EC226E /* AppDelegate.swift */; };
+		965841A61B1A048900EC226E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965841A51B1A048900EC226E /* ViewController.swift */; };
+		965841A91B1A048900EC226E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965841A71B1A048900EC226E /* Main.storyboard */; };
+		965841AB1B1A048900EC226E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965841AA1B1A048900EC226E /* Images.xcassets */; };
+		965841AE1B1A048900EC226E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965841AC1B1A048900EC226E /* LaunchScreen.xib */; };
+		965841BA1B1A048A00EC226E /* Geographical_sceneryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965841B91B1A048A00EC226E /* Geographical_sceneryTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		965841B41B1A048A00EC226E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965841961B1A048900EC226E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9658419D1B1A048900EC226E;
+			remoteInfo = "Geographical-scenery";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9658419E1B1A048900EC226E /* Geographical-scenery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geographical-scenery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		965841A21B1A048900EC226E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965841A31B1A048900EC226E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		965841A51B1A048900EC226E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		965841A81B1A048900EC226E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		965841AA1B1A048900EC226E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		965841AD1B1A048900EC226E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		965841B31B1A048A00EC226E /* Geographical-sceneryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Geographical-sceneryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		965841B81B1A048A00EC226E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965841B91B1A048A00EC226E /* Geographical_sceneryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geographical_sceneryTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9658419B1B1A048900EC226E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965841B01B1A048A00EC226E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		965841951B1A048900EC226E = {
+			isa = PBXGroup;
+			children = (
+				965841A01B1A048900EC226E /* Geographical-scenery */,
+				965841B61B1A048A00EC226E /* Geographical-sceneryTests */,
+				9658419F1B1A048900EC226E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9658419F1B1A048900EC226E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9658419E1B1A048900EC226E /* Geographical-scenery.app */,
+				965841B31B1A048A00EC226E /* Geographical-sceneryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		965841A01B1A048900EC226E /* Geographical-scenery */ = {
+			isa = PBXGroup;
+			children = (
+				965841A31B1A048900EC226E /* AppDelegate.swift */,
+				965841A51B1A048900EC226E /* ViewController.swift */,
+				965841A71B1A048900EC226E /* Main.storyboard */,
+				965841AA1B1A048900EC226E /* Images.xcassets */,
+				965841AC1B1A048900EC226E /* LaunchScreen.xib */,
+				965841A11B1A048900EC226E /* Supporting Files */,
+			);
+			path = "Geographical-scenery";
+			sourceTree = "<group>";
+		};
+		965841A11B1A048900EC226E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				965841A21B1A048900EC226E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		965841B61B1A048A00EC226E /* Geographical-sceneryTests */ = {
+			isa = PBXGroup;
+			children = (
+				965841B91B1A048A00EC226E /* Geographical_sceneryTests.swift */,
+				965841B71B1A048A00EC226E /* Supporting Files */,
+			);
+			path = "Geographical-sceneryTests";
+			sourceTree = "<group>";
+		};
+		965841B71B1A048A00EC226E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				965841B81B1A048A00EC226E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9658419D1B1A048900EC226E /* Geographical-scenery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965841BD1B1A048A00EC226E /* Build configuration list for PBXNativeTarget "Geographical-scenery" */;
+			buildPhases = (
+				9658419A1B1A048900EC226E /* Sources */,
+				9658419B1B1A048900EC226E /* Frameworks */,
+				9658419C1B1A048900EC226E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Geographical-scenery";
+			productName = "Geographical-scenery";
+			productReference = 9658419E1B1A048900EC226E /* Geographical-scenery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		965841B21B1A048A00EC226E /* Geographical-sceneryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965841C01B1A048A00EC226E /* Build configuration list for PBXNativeTarget "Geographical-sceneryTests" */;
+			buildPhases = (
+				965841AF1B1A048A00EC226E /* Sources */,
+				965841B01B1A048A00EC226E /* Frameworks */,
+				965841B11B1A048A00EC226E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				965841B51B1A048A00EC226E /* PBXTargetDependency */,
+			);
+			name = "Geographical-sceneryTests";
+			productName = "Geographical-sceneryTests";
+			productReference = 965841B31B1A048A00EC226E /* Geographical-sceneryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		965841961B1A048900EC226E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Shepherd;
+				TargetAttributes = {
+					9658419D1B1A048900EC226E = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					965841B21B1A048A00EC226E = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 9658419D1B1A048900EC226E;
+					};
+				};
+			};
+			buildConfigurationList = 965841991B1A048900EC226E /* Build configuration list for PBXProject "Geographical-scenery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 965841951B1A048900EC226E;
+			productRefGroup = 9658419F1B1A048900EC226E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9658419D1B1A048900EC226E /* Geographical-scenery */,
+				965841B21B1A048A00EC226E /* Geographical-sceneryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9658419C1B1A048900EC226E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965841A91B1A048900EC226E /* Main.storyboard in Resources */,
+				965841AE1B1A048900EC226E /* LaunchScreen.xib in Resources */,
+				965841AB1B1A048900EC226E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965841B11B1A048A00EC226E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9658419A1B1A048900EC226E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965841A61B1A048900EC226E /* ViewController.swift in Sources */,
+				965841A41B1A048900EC226E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965841AF1B1A048A00EC226E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965841BA1B1A048A00EC226E /* Geographical_sceneryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		965841B51B1A048A00EC226E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9658419D1B1A048900EC226E /* Geographical-scenery */;
+			targetProxy = 965841B41B1A048A00EC226E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		965841A71B1A048900EC226E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965841A81B1A048900EC226E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		965841AC1B1A048900EC226E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965841AD1B1A048900EC226E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		965841BB1B1A048A00EC226E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		965841BC1B1A048A00EC226E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		965841BE1B1A048A00EC226E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Geographical-scenery/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		965841BF1B1A048A00EC226E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Geographical-scenery/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		965841C11B1A048A00EC226E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Geographical-sceneryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geographical-scenery.app/Geographical-scenery";
+			};
+			name = Debug;
+		};
+		965841C21B1A048A00EC226E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Geographical-sceneryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geographical-scenery.app/Geographical-scenery";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		965841991B1A048900EC226E /* Build configuration list for PBXProject "Geographical-scenery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965841BB1B1A048A00EC226E /* Debug */,
+				965841BC1B1A048A00EC226E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965841BD1B1A048A00EC226E /* Build configuration list for PBXNativeTarget "Geographical-scenery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965841BE1B1A048A00EC226E /* Debug */,
+				965841BF1B1A048A00EC226E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		965841C01B1A048A00EC226E /* Build configuration list for PBXNativeTarget "Geographical-sceneryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965841C11B1A048A00EC226E /* Debug */,
+				965841C21B1A048A00EC226E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 965841961B1A048900EC226E /* Project object */;
+}
