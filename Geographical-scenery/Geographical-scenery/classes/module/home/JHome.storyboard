@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JOV-A3-TUM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Qe3-6O-Stb">
+            <objects>
+                <navigationController id="JOV-A3-TUM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TK3-n1-FJG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Uvw-st-K5v" kind="relationship" relationship="rootViewController" id="yWt-Vl-sL5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mib-IO-4GC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463" y="280"/>
+        </scene>
+        <!--Home CollectionVC-->
+        <scene sceneID="52v-Wb-TU6">
+            <objects>
+                <collectionViewController id="Uvw-st-K5v" customClass="JHomeCollectionVC" customModule="Geographical_scenery" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="aZj-az-bcn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="12F-oT-ldt">
+                            <size key="itemSize" width="204" height="148"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="20" maxX="36" maxY="36"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JHomeCell" id="kw9-HZ-lE1" customClass="JHomeCell" customModule="Geographical_scenery" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="204" height="148"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-cR-Uvk" userLabel="图集概览">
+                                            <rect key="frame" x="0.0" y="0.0" width="204" height="148"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QA-Op-a2f" userLabel="没看过的">
+                                            <rect key="frame" x="178" y="0.0" width="26" height="26"/>
+                                            <state key="normal" image="eye">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="1QA-Op-a2f" firstAttribute="top" secondItem="mXQ-cR-Uvk" secondAttribute="top" id="CQg-UO-Yvw"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="mXQ-cR-Uvk" secondAttribute="trailing" constant="-8" id="Um8-BV-eAN"/>
+                                    <constraint firstItem="mXQ-cR-Uvk" firstAttribute="leading" secondItem="kw9-HZ-lE1" secondAttribute="leadingMargin" constant="-8" id="ZAi-Pu-5aQ"/>
+                                    <constraint firstItem="mXQ-cR-Uvk" firstAttribute="top" secondItem="kw9-HZ-lE1" secondAttribute="topMargin" constant="-8" id="cav-ku-n6Q"/>
+                                    <constraint firstItem="1QA-Op-a2f" firstAttribute="trailing" secondItem="mXQ-cR-Uvk" secondAttribute="trailing" id="d7K-GO-vBt"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="mXQ-cR-Uvk" secondAttribute="bottom" constant="-8" id="yIQ-8P-ZIq"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="albumThumbView" destination="mXQ-cR-Uvk" id="SR3-z5-Yem"/>
+                                    <outlet property="readButton" destination="1QA-Op-a2f" id="aGD-WY-Mw5"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Uvw-st-K5v" id="Rmy-18-0yK"/>
+                            <outlet property="delegate" destination="Uvw-st-K5v" id="IRP-Ei-7pi"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="lYS-FR-0Wj">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="logo" style="done" id="3gD-IB-MrJ"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U6b-n3-Sd6" userLabel="标题">
+                            <rect key="frame" x="229" y="13" width="142" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" backgroundImage="headn">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" style="done" id="K9G-aH-Q1Q">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6co-xl-CUn" userLabel="设置">
+                                <rect key="frame" x="451" y="7" width="31" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="setting-nor">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="setting-down"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="layout" destination="12F-oT-ldt" id="5Yh-GM-KPK"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppp-t0-LR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="280"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="2048" height="1536"/>
+        <image name="eye" width="26" height="26"/>
+        <image name="headn" width="140" height="15"/>
+        <image name="logo" width="100" height="38"/>
+        <image name="setting-down" width="31" height="31"/>
+        <image name="setting-nor" width="31" height="31"/>
+    </resources>
+</document>

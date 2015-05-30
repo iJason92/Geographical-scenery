@@ -12,7 +12,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "Default.png",
+      "filename" : "LaunchImage-700-Landscape~ipad.png",
       "scale" : "1x"
     },
     {
@@ -27,7 +27,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "Default@2x.png",
+      "filename" : "LaunchImage-700-Landscape@2x~ipad.png",
       "scale" : "2x"
     }
   ],
