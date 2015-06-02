@@ -12,6 +12,9 @@
 		965841BA1B1A048A00EC226E /* Geographical_sceneryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965841B91B1A048A00EC226E /* Geographical_sceneryTests.swift */; };
 		96A426241B1A63E400723538 /* JHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A426231B1A63E400723538 /* JHome.storyboard */; };
 		96A426261B1A68BA00723538 /* JHomeCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A426251B1A68BA00723538 /* JHomeCollectionVC.swift */; };
+		96D711041B1BB773009837E6 /* JAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D711031B1BB773009837E6 /* JAlbum.swift */; };
+		96D711061B1BB7CA009837E6 /* JPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D711051B1BB7CA009837E6 /* JPicture.swift */; };
+		96D711081B1BBD02009837E6 /* JLinearLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D711071B1BBD02009837E6 /* JLinearLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 		965841B91B1A048A00EC226E /* Geographical_sceneryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geographical_sceneryTests.swift; sourceTree = "<group>"; };
 		96A426231B1A63E400723538 /* JHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JHome.storyboard; sourceTree = "<group>"; };
 		96A426251B1A68BA00723538 /* JHomeCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHomeCollectionVC.swift; sourceTree = "<group>"; };
+		96D711031B1BB773009837E6 /* JAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JAlbum.swift; sourceTree = "<group>"; };
+		96D711051B1BB7CA009837E6 /* JPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPicture.swift; sourceTree = "<group>"; };
+		96D711071B1BBD02009837E6 /* JLinearLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLinearLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,18 +117,11 @@
 		96A4261D1B1A635F00723538 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				96A4261E1B1A635F00723538 /* model */,
+				96D711021B1BB765009837E6 /* model */,
 				96A4261F1B1A635F00723538 /* module */,
 				96A426201B1A635F00723538 /* tools */,
 			);
 			path = classes;
-			sourceTree = "<group>";
-		};
-		96A4261E1B1A635F00723538 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		96A4261F1B1A635F00723538 /* module */ = {
@@ -153,8 +152,18 @@
 			children = (
 				96A426231B1A63E400723538 /* JHome.storyboard */,
 				96A426251B1A68BA00723538 /* JHomeCollectionVC.swift */,
+				96D711071B1BBD02009837E6 /* JLinearLayout.swift */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		96D711021B1BB765009837E6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				96D711031B1BB773009837E6 /* JAlbum.swift */,
+				96D711051B1BB7CA009837E6 /* JPicture.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D711081B1BBD02009837E6 /* JLinearLayout.swift in Sources */,
 				96A426261B1A68BA00723538 /* JHomeCollectionVC.swift in Sources */,
 				965841A41B1A048900EC226E /* AppDelegate.swift in Sources */,
+				96D711041B1BB773009837E6 /* JAlbum.swift in Sources */,
+				96D711061B1BB7CA009837E6 /* JPicture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
