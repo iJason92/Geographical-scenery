@@ -8,7 +8,7 @@
 
 import UIKit
 
-let reuseId = "JHomeCell"
+private let reuseId = "JHomeCell"
 
 class JHomeCollectionVC: UICollectionViewController {
 
@@ -28,17 +28,44 @@ class JHomeCollectionVC: UICollectionViewController {
     // 每个cell的内容
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseId, forIndexPath: indexPath) as! JHomeCell
-        
         return cell
     }
 }
 
 /***  图片概览的cell */
 class JHomeCell: UICollectionViewCell {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        prepareLoad()
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+    }
     
-    // 相册缩略视图
+    override func awakeFromNib() {
+        prepareLoad()
+    }
+    
+    // 初始化视图
+    private func prepareLoad() {
+        // 图片
+        // 背景色
+        backgroundColor = UIColor.whiteColor()
+        // 圆角
+        layer.cornerRadius = 8
+        layer.masksToBounds = true
+        // 选中的背景视图
+        let bgView = JCustomCellBg()
+        selectedBackgroundView = bgView
+    }
+    /*** 日期 */
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    /** 相册缩略视图 */
     @IBOutlet weak var albumThumbView: UIImageView!
     
-    // 是否已读缩略图
+    /*** 是否已读缩略图 */
     @IBOutlet weak var readButton: UIButton!
 }

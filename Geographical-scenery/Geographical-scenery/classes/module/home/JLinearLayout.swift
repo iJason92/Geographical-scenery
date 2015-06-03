@@ -9,8 +9,8 @@
 import UIKit
 /// 自定义layout
 class JLinearLayout: UICollectionViewFlowLayout {
-    private let height : CGFloat = 181.0
-    private let width : CGFloat = 246.0
+    private let height : CGFloat = 200.0
+    private let width : CGFloat = 200.0
     private let active_distance : CGFloat = 200.0
     private let zoom_factor : CGFloat = 0.3
     /// 纯代码开发调用该方法
@@ -24,8 +24,8 @@ class JLinearLayout: UICollectionViewFlowLayout {
     override func awakeFromNib() {
         itemSize = CGSizeMake(width, height)
         scrollDirection = UICollectionViewScrollDirection.Horizontal
-        sectionInset = UIEdgeInsetsMake(30.0, 12.0, 30.0, 32.0)
-        minimumLineSpacing = 30
+        sectionInset = UIEdgeInsetsMake(100.0, 0.0, 100.0, 0.0)
+        minimumLineSpacing = 50
     }
     
     override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
